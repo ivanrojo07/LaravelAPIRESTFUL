@@ -1,0 +1,1994 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"err",
+				"errorResponse"
+			],
+			[
+				"Au",
+				"AuthorizationException"
+			],
+			[
+				"exce",
+				"$exception〔variable〕"
+			],
+			[
+				"Va",
+				"ValidationException"
+			],
+			[
+				"sh",
+				"showOne"
+			],
+			[
+				"vende",
+				"$vendedor〔variable〕"
+			],
+			[
+				"requ",
+				"require〔keyword〕"
+			],
+			[
+				"Api",
+				"ApiResponser〔namespace〕"
+			],
+			[
+				"comp",
+				"$comprador〔variable〕"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fin",
+				"findOrFail"
+			],
+			[
+				"reques",
+				"$request〔variable〕"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"USUARIO",
+				"USUARIO_REGULAR"
+			],
+			[
+				"Usuari",
+				"USUARIO_NO_VERIFICADO〔constant〕"
+			],
+			[
+				"canti",
+				"$cantidadProductos〔variable〕"
+			],
+			[
+				"cant",
+				"$cantidadTransacciones〔variable〕"
+			],
+			[
+				"random",
+				"random()-id"
+			],
+			[
+				"belo",
+				"belongsToMany〔function〕"
+			],
+			[
+				"u",
+				"USUARIO_VERIFICADO〔constant〕"
+			],
+			[
+				"verifi",
+				"verification_token"
+			],
+			[
+				"ta",
+				"tareaModel\tproperty"
+			],
+			[
+				"tare",
+				"tareaInfo\tproperty"
+			],
+			[
+				"i",
+				"i\tTag"
+			],
+			[
+				"gly",
+				"glyphicon-pencil"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"res",
+				"respuesta"
+			],
+			[
+				"List",
+				"ListaSchema"
+			],
+			[
+				"Produc",
+				"ProductoEditComponent\talias"
+			],
+			[
+				"a",
+				"a\tTag"
+			],
+			[
+				"Produ",
+				"Producto\talias"
+			],
+			[
+				"Producto",
+				"ProductoService\talias"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"make",
+				"makeFileRequest\tmethod"
+			],
+			[
+				"mak",
+				"makeFileRequest\tmethod"
+			],
+			[
+				"Xm",
+				"XMLHttpRequest\tinterface"
+			],
+			[
+				"produ",
+				"ProductoService\talias"
+			],
+			[
+				"Pro",
+				"Producto\talias"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"pro",
+				"producto"
+			],
+			[
+				"string",
+				"string\tkeyword"
+			],
+			[
+				"Component",
+				"Component\talias"
+			],
+			[
+				"app",
+				"appRoutingProviders\talias"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"upl",
+				"upload"
+			],
+			[
+				"nu",
+				"num_rows"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"con",
+				"consulta"
+			],
+			[
+				"co",
+				"connection"
+			],
+			[
+				"conn",
+				"connect_db"
+			],
+			[
+				"null",
+				"null\tkeyword"
+			],
+			[
+				"if",
+				"if\tif …"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"auto",
+				"AutoService\talias"
+			],
+			[
+				"Auto",
+				"AutoService\talias"
+			],
+			[
+				"value",
+				"value_two\tlet"
+			],
+			[
+				"valu",
+				"value_two\tlet"
+			],
+			[
+				"parse",
+				"parseInt\tfunction"
+			],
+			[
+				"Pipe",
+				"PipeTransform\talias"
+			],
+			[
+				"navi",
+				"navigate\tmethod"
+			],
+			[
+				"for",
+				"forEach\tmethod"
+			],
+			[
+				"_rou",
+				"_route\tproperty"
+			],
+			[
+				"module",
+				"ModuleWithProviders\talias"
+			],
+			[
+				"color",
+				"color_seleccionado\tproperty"
+			],
+			[
+				"Trabaja",
+				"Trabajador"
+			],
+			[
+				"trabaja",
+				"trabajador_externo\tproperty"
+			],
+			[
+				"traba",
+				"trabajador_externo\tproperty"
+			],
+			[
+				"response",
+				"response\tparameter"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"import",
+				"import\timports a module …"
+			],
+			[
+				"Favo",
+				"Favorito\talias"
+			],
+			[
+				"tme",
+				"templateUrl\tproperty"
+			],
+			[
+				"Rout",
+				"Router\talias"
+			],
+			[
+				"_rout",
+				"_router\tproperty"
+			],
+			[
+				"Fav",
+				"Favorito\talias"
+			],
+			[
+				"Favorito",
+				"FavoritoEditComponent\talias"
+			],
+			[
+				"const",
+				"constructor\tkeyword"
+			],
+			[
+				"Fa",
+				"Favorito\talias"
+			],
+			[
+				"templ",
+				"templateUrl\tproperty"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"get",
+				"getFavorito\tmethod"
+			],
+			[
+				"_",
+				"_favoritoService\tproperty"
+			],
+			[
+				"Favor",
+				"FavoritoService\talias"
+			],
+			[
+				"imp",
+				"import\timports a module …"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"favor",
+				"favortitosVisibles\tproperty"
+			],
+			[
+				"temp",
+				"templateUrl\tproperty"
+			],
+			[
+				"Acces-C",
+				"Access-Control-Allow-Headers"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"favo",
+				"favorito"
+			],
+			[
+				"favori",
+				"favorito"
+			],
+			[
+				"fav",
+				"favorito"
+			],
+			[
+				"fa",
+				"FavoritoSchema"
+			],
+			[
+				"favorito",
+				"favoritoId"
+			],
+			[
+				"dele",
+				"deleteFavorito"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"usuario",
+				"usuario_por_pagina"
+			],
+			[
+				"pagina",
+				"pagina"
+			],
+			[
+				"column",
+				"columnas"
+			],
+			[
+				"echo",
+				"echo\techo \"…\""
+			],
+			[
+				"upper",
+				"strtoupper"
+			],
+			[
+				"session",
+				"session_destroy"
+			],
+			[
+				"image",
+				"image_upload"
+			],
+			[
+				"ph",
+				"php\t<?php … ?>"
+			],
+			[
+				"columna",
+				"columna"
+			],
+			[
+				"insert",
+				"insert_user"
+			],
+			[
+				"inset",
+				"insert_user"
+			],
+			[
+				"apellidos",
+				"apellidos"
+			],
+			[
+				"imagen",
+				"imagen_validate"
+			],
+			[
+				"contraseñ",
+				"contraseña_validate"
+			],
+			[
+				"apellido",
+				"apellido_validate"
+			],
+			[
+				"mys",
+				"mysql_query"
+			],
+			[
+				"mysql",
+				"mysql_connect"
+			],
+			[
+				"mysql_",
+				"mysql_connect"
+			],
+			[
+				"mysq",
+				"mysql_query"
+			],
+			[
+				"op",
+				"option\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+			"settings":
+			{
+				"buffer_size": 1063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Category.php",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Providers/AppServiceProvider.php",
+			"settings":
+			{
+				"buffer_size": 484,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
+			"settings":
+			{
+				"buffer_size": 995,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
+			"settings":
+			{
+				"buffer_size": 918,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
+			"settings":
+			{
+				"buffer_size": 686,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
+			"settings":
+			{
+				"buffer_size": 881,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
+			"settings":
+			{
+				"buffer_size": 2127,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+			"settings":
+			{
+				"buffer_size": 1047,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Seller/SellerController.php",
+			"settings":
+			{
+				"buffer_size": 1778,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Transaction/TransactionController.php",
+			"settings":
+			{
+				"buffer_size": 1569,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/User/UserController.php",
+			"settings":
+			{
+				"buffer_size": 4292,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Exceptions/Handler.php",
+			"settings":
+			{
+				"buffer_size": 3380,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Controller.php",
+			"settings":
+			{
+				"buffer_size": 404,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+			"settings":
+			{
+				"buffer_size": 7554,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/ApiController.php",
+			"settings":
+			{
+				"buffer_size": 161,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerController.php",
+			"settings":
+			{
+				"buffer_size": 1774,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Category/CategoryController.php",
+			"settings":
+			{
+				"buffer_size": 1563,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Product/ProductController.php",
+			"settings":
+			{
+				"buffer_size": 1561,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "User.php",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Seller.php",
+			"settings":
+			{
+				"buffer_size": 193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Product.php",
+			"settings":
+			{
+				"buffer_size": 726,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Transaction.php",
+			"settings":
+			{
+				"buffer_size": 379,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Buyer.php",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"uninstall",
+				"Snippet: Angular Material - Use the md-tab a nested directive used within md-tabs to specify a tab with a label and optional view content."
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 320.0
+	},
+	"console":
+	{
+		"height": 93.0,
+		"history":
+		[
+			"npm -v",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Console",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Auth",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Middleware",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/bootstrap",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/config",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/tests",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Exception",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/routing"
+	],
+	"file_history":
+	[
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Tests/HttpCache/HttpCacheTestCase.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits/ApiResponser.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/mockery/mockery/library/Mockery/Generator/Generator.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/User.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Product.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Transaction.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/Homestead.yaml",
+		"/C/Users/Ivan Rojo/Desktop/hosts",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Ivan Rojo/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/C/Users/Ivan Rojo/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings",
+		"/C/Users/Ivan Rojo/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Notifications/Notifiable.php",
+		"/C/Users/Ivan Rojo/Desktop/APINODE/models/lista.js",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/models/producto.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/index.html",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/app.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/app.module.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/app.component.html",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/components/error.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/views/error.html",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/app.routing.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/assets/css/styles.css",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/components/home.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/WebApp/src/app/views/home.html",
+		"/C/xampp/htdocs/Angular4-Backend/piramide-uploader/PiramideUploader.php",
+		"/C/xampp/htdocs/Angular4-Backend/piramide-uploader/example.php",
+		"/C/Users/Ivan Rojo/Desktop/CursoAngular4/Angular4-Backend/index.php",
+		"/C/Users/Ivan Rojo/Desktop/CursoAngular4/Angular4-Backend/composer.json",
+		"/C/Users/Ivan Rojo/Desktop/CursoAngular4/Angular4/dbangular.sql",
+		"/C/Users/Ivan Rojo/Desktop/CursoAngular4/Angular4/src/app/plantillas/plantillas.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/CursoAngular4/Angular4/src/app/plantillas/plantillas.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/app.module.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/app.routing.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/app.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/autos/autos.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/autos/autos.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/services/peticiones.service.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/services/auto.service.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/services/ropa.service.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/autos/auto.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/articulo/articulo.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/articulo/articulo.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/home/home.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/assets/styles.css",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/home/home.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/pipes/conversor.pipe.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/contacto/contacto.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/contacto/contacto.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/index.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/fruta/fruta.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/fruta/fruta.component.html",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.ts",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/main.ts",
+		"/C/Users/Ivan Rojo/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
+		"/C/Users/Ivan Rojo/Desktop/Angular4/proyectoAngular4.sublime-project",
+		"/C/Users/Ivan Rojo/Desktop/marcador/angular-cli.json",
+		"/C/Users/Ivan Rojo/Desktop/marcador/package.json",
+		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/package.json",
+		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/index.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favorito-delete.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favorito-add.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favoritos-list.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/assets/css/style.css",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/index.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favorito-detail.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/app.component.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favoritos-list.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/api-restful-favoritos/app.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favorito-detail.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/api-restful-favoritos/controllers/favorito.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favoritos-list-primerejercicio.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/services/favorito.service.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/app.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/home.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/package.json",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favoritos-list.component.js.map",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/app.module.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/typings.json",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/node_modules/weinre/web/client/inspector.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/package.json",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/app/app.component.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/systemjs.config.js",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/app/main.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/index.html",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/app/app.module.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/typings.json",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/package-lock.json",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/app/app.component.ts",
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/tsconfig.json",
+		"/C/xampp/htdocs/CursoPHP/ejercicio29verusuarios.php",
+		"/C/xampp/htdocs/CursoPHP/login.php",
+		"/C/xampp/htdocs/CursoPHP/editar.php",
+		"/C/xampp/htdocs/CursoPHP/conect.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio24.php",
+		"/C/xampp/htdocs/CursoPHP/index.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio1.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio2.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio3.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio4.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio5.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio6.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio7.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio17.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio18.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio19.php",
+		"/C/xampp/htdocs/CursoPHP/header.php",
+		"/C/xampp/htdocs/CursoPHP/body.php",
+		"/C/xampp/htdocs/CursoPHP/footer.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio8.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio9.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio10.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio11.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio12.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio13.php",
+		"/C/xampp/htdocs/CursoPHP/ejercicio14.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"C:\\xampp\\htdocs\\deq_web\\resources\\views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"text",
+			"Code",
+			"  ",
+			"a",
+			" (",
+			"/'",
+			"!!",
+			"button",
+			"\">",
+			"response",
+			"nombre",
+			"${{",
+			"producto",
+			" >",
+			"query",
+			"imagen",
+			");\n",
+			"></",
+			"required",
+			"fullDate",
+			"();",
+			"span",
+			"prenda",
+			"nombre_",
+			"]=\"['/']\">",
+			"a",
+			"=\"\">",
+			"h1",
+			";\n",
+			"background",
+			"trabajadores",
+			"].",
+			"1",
+			"Persona",
+			"persona",
+			"Persona",
+			"persona",
+			"ul",
+			"0",
+			">{{}}</",
+			"p",
+			";\n",
+			"templateUrl",
+			"Hola",
+			"persona",
+			"views",
+			"'./",
+			"titleTemplate",
+			"></",
+			"5px",
+			"bootstrap",
+			"');\n",
+			"!!');\n",
+			"',\n",
+			"\t\n",
+			"string",
+			";\n",
+			"';\n",
+			"params",
+			"updatefavorito",
+			"expression",
+			"usuario_pagina",
+			"\");\n",
+			"\";\n",
+			"expression",
+			");\n",
+			"errors",
+			"\t\n",
+			";\n",
+			"mysql_query",
+			"mysqli",
+			"multiplicar",
+			"5",
+			"valor",
+			";\n",
+			"strtoupper",
+			";$",
+			"variable",
+			"Lista",
+			"nombres",
+			"\"> ",
+			"right",
+			"lg",
+			"libros",
+			"Faker",
+			"{\n",
+			"php",
+			")\n",
+			"faker",
+			";\n",
+			"hasmany",
+			"hasMany",
+			"Eloquent",
+			"hasMany",
+			"many",
+			"hasmany",
+			"fillable",
+			"table",
+			",]);",
+			"place.name",
+			"}));",
+			"Storage::disk",
+			"route('logout')",
+			"<",
+			"ext",
+			"()\n",
+			"require",
+			"var",
+			"');\n",
+			"  \n",
+			"signupForm",
+			"signinForm",
+			"');",
+			"id=\"editarPerfilForm\"",
+			"editar",
+			">\n",
+			"slide",
+			"float",
+			"OFERTAS",
+			"ENTREGABLES",
+			"projectImagesD",
+			"logo-header",
+			"\n\t\t<a href=\"http://localhost:8000\"><img src=\"http://45.33.24.98/CDN/deq/logo-header.svg\"></a>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 12,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Providers/AppServiceProvider.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								586,
+								586
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								918,
+								918
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 686,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 158.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								822,
+								822
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 256.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2100,
+								2100
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Http/Controllers/Seller/SellerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1778,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1110,
+								1110
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Http/Controllers/Transaction/TransactionController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 674.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Http/Controllers/User/UserController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4283,
+								4283
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4973.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Exceptions/Handler.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2813,
+								2813
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3151.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Http/Controllers/Controller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								398
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4613,
+								4171
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Http/Controllers/ApiController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								71
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Http/Controllers/Buyer/BuyerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1107,
+								1107
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "Http/Controllers/Category/CategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1284.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "Http/Controllers/Product/ProductController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1561,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1142.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 303.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "Seller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								183,
+								183
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "Product.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "Transaction.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "Buyer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 29.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 23.0
+	},
+	"pinned_build_system": "",
+	"project": "APIRESTFul.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"install.php"
+			],
+			[
+				"translate",
+				"src\\translate\\en-US.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 536.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 313.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
