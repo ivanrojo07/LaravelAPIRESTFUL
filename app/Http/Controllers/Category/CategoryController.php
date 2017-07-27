@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Category;
 
+use App\Category;
 use Illuminate\Http\Request;
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\Controller;
 
-class CategoryController extends ApiController
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,6 +16,8 @@ class CategoryController extends ApiController
     public function index()
     {
         //
+        $categories = Category::all();
+        return $this->showAll($categories); 
     }
 
     /**
@@ -36,26 +39,38 @@ class CategoryController extends ApiController
     public function store(Request $request)
     {
         //
+        $rules=['name' => 'required'];
+        $this->validate($request,$rules);
+        $campos = $request->all();
+        $category = Category::create($campos);
+        if($category){
+            return $this->showOne($category);
+        }
+        else{
+            return $this->errorResponse('Error al guardar categoria',  500);
+        }
+
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
         //
+        return $this->showOne($category);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category)
     {
         //
     }
@@ -64,22 +79,42 @@ class CategoryController extends ApiController
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Category $category)
     {
         //
+        $category = Category::findOrFail($category->id);
+        if ($request->has('name')) {
+            $category->name = $request->name;
+        }
+        if ($request->has('description')) {
+            # code...
+            $category->description =$request->description;
+        }
+        $category->save();
+        return $this->showOne($category);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category)
     {
         //
+        $category = Category::findOrFail($category->id);
+        $eliminar = $category->delete($category);
+        if ($eliminar) {
+            # code...
+            return $this->showOne($category);
+        }
+        else{
+            return $this->errorResponse('Error al eliminar usuario', 500);
+        }
+
     }
 }
