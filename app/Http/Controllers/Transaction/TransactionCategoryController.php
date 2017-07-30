@@ -2,23 +2,21 @@
 
 namespace App\Http\Controllers\Transaction;
 
-use App\Product;
 use App\Transaction;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class TransactionController extends Controller
+class TransactionCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Transaction $transaction)
     {
-        //
-        $transacciones = Transaction::all();
-        return $this->showAll($transacciones);
+        $categories = $transaction->product->categories;
+        return $this->showAll($categories);
     }
 
     /**
@@ -51,7 +49,6 @@ class TransactionController extends Controller
     public function show(Transaction $transaction)
     {
         //
-        return $this->showOne($transaction);
     }
 
     /**

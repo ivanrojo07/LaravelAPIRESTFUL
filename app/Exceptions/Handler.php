@@ -7,9 +7,9 @@ use Illuminate\Database\QueryException;
 use App\Traits\ApiResponser as ApiResponser;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Auth\Access\AuthorizationException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 class Handler extends ExceptionHandler
@@ -55,19 +55,19 @@ class Handler extends ExceptionHandler
         if($exception instanceof AuthenticationException) {
             return $this->unauthenticated($request, $exception);
         }
-        if ($exception instanceof AuthorizationException) {
+        elseif ($exception instanceof AuthorizationException) {
             return $this->errorResponse('No posee permisos para ejecutar esta acción',403);
         }
-        if ($exception instanceof NotFoundHttpException){
+        elseif ($exception instanceof NotFoundHttpException){
             return $this->errorResponse('No se encontro la url solicitada',404);
         }
-        if ($exception instanceof MethodNotAllowedHttpException) {
+        elseif ($exception instanceof MethodNotAllowedHttpException) {
             return $this->errorResponse('Este metodo no es valido',405);
         }
-        if ($exception instanceof HttpException){
+        elseif ($exception instanceof HttpException){
             return $this->errorResponse($exception->getMessage(), $exception->getStatusCode());
         }
-        if ($exception instanceof QueryException){
+        elseif ($exception instanceof QueryException){
             // dd($exception);
             $codigo = $exception->errorInfo[1];
             if($codigo ==1451){
@@ -75,11 +75,13 @@ class Handler extends ExceptionHandler
             }
             
         }
-        if (config('app.debug')) {
-            # code...
-            return $this->errorResponse('falla inesperda, intente luego',500);
-        }
-        return parent::render($request, $exception);
+        // if (config('app.debug')) {
+        //     # code...
+        //     return $this->errorResponse('falla inesperda, intente luego',500);
+        // }
+        else{
+            return parent::render($request, $exception);
+        }    
     }
 
     /**

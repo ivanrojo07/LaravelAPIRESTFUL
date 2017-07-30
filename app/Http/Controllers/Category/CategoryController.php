@@ -85,7 +85,11 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         //
-        $category = Category::findOrFail($category->id);
+        // $category = Category::findOrFail($category->id);
+        $category->fill($request->intersect(['name','description']));
+        if ($category->isClean()) {
+            return $this->errorResponse('Debe especificar al menos un valor para actualizar', 422);
+        }
         if ($request->has('name')) {
             $category->name = $request->name;
         }

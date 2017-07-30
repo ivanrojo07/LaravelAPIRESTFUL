@@ -4,8 +4,72 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"showAll〔function〕"
+			],
+			[
+				"pr",
+				"$products〔variable〕"
+			],
+			[
+				"p",
+				"products"
+			],
+			[
+				"sho",
+				"showAll〔function〕"
+			],
+			[
+				"tra",
+				"transactions"
+			],
+			[
+				"Tr",
+				"Transaction\\TransactionCategoryController"
+			],
+			[
+				"transa",
+				"transaction"
+			],
+			[
+				"show",
+				"showOne〔function〕"
+			],
+			[
+				"pro",
+				"productos"
+			],
+			[
+				"categ",
+				"$category〔variable〕"
+			],
+			[
 				"err",
-				"errorResponse"
+				"errorResponse〔function〕"
+			],
+			[
+				"cate",
+				"$category〔variable〕"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"compra",
+				"$comprador〔variable〕"
+			],
+			[
+				"Buy",
+				"Buyer〔namespace〕"
+			],
+			[
+				"stat",
+				"static〔keyword〕"
+			],
+			[
+				"ca",
+				"class\tclass …"
 			],
 			[
 				"Au",
@@ -164,10 +228,6 @@
 				"form-control"
 			],
 			[
-				"pro",
-				"producto"
-			],
-			[
 				"string",
 				"string\tkeyword"
 			],
@@ -178,10 +238,6 @@
 			[
 				"app",
 				"appRoutingProviders\talias"
-			],
-			[
-				"p",
-				"p\tTag"
 			],
 			[
 				"padd",
@@ -458,88 +514,25 @@
 			[
 				"session",
 				"session_destroy"
-			],
-			[
-				"image",
-				"image_upload"
-			],
-			[
-				"ph",
-				"php\t<?php … ?>"
-			],
-			[
-				"columna",
-				"columna"
-			],
-			[
-				"insert",
-				"insert_user"
-			],
-			[
-				"inset",
-				"insert_user"
-			],
-			[
-				"apellidos",
-				"apellidos"
-			],
-			[
-				"imagen",
-				"imagen_validate"
-			],
-			[
-				"contraseñ",
-				"contraseña_validate"
-			],
-			[
-				"apellido",
-				"apellido_validate"
-			],
-			[
-				"mys",
-				"mysql_query"
-			],
-			[
-				"mysql",
-				"mysql_connect"
-			],
-			[
-				"mysql_",
-				"mysql_connect"
-			],
-			[
-				"mysq",
-				"mysql_query"
-			],
-			[
-				"op",
-				"option\tTag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+			"file": "Scopes/SellerScope.php",
 			"settings":
 			{
-				"buffer_size": 1063,
-				"line_ending": "Unix"
+				"buffer_size": 304,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Category.php",
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2014_10_12_000000_create_users_table.php",
 			"settings":
 			{
-				"buffer_size": 271,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Providers/AppServiceProvider.php",
-			"settings":
-			{
-				"buffer_size": 484,
+				"buffer_size": 1004,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -548,7 +541,7 @@
 			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
 			"settings":
 			{
-				"buffer_size": 995,
+				"buffer_size": 1030,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -557,7 +550,7 @@
 			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
 			"settings":
 			{
-				"buffer_size": 918,
+				"buffer_size": 954,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -566,123 +559,7 @@
 			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
 			"settings":
 			{
-				"buffer_size": 686,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
-			"settings":
-			{
-				"buffer_size": 881,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
-			"settings":
-			{
-				"buffer_size": 2127,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
-			"settings":
-			{
-				"buffer_size": 1047,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Seller/SellerController.php",
-			"settings":
-			{
-				"buffer_size": 1778,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Transaction/TransactionController.php",
-			"settings":
-			{
-				"buffer_size": 1569,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/User/UserController.php",
-			"settings":
-			{
-				"buffer_size": 4292,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Exceptions/Handler.php",
-			"settings":
-			{
-				"buffer_size": 3380,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Controller.php",
-			"settings":
-			{
-				"buffer_size": 404,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
-			"settings":
-			{
-				"buffer_size": 7554,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/ApiController.php",
-			"settings":
-			{
-				"buffer_size": 161,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Buyer/BuyerController.php",
-			"settings":
-			{
-				"buffer_size": 1774,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Category/CategoryController.php",
-			"settings":
-			{
-				"buffer_size": 1563,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Product/ProductController.php",
-			"settings":
-			{
-				"buffer_size": 1561,
+				"buffer_size": 721,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -691,24 +568,17 @@
 			"file": "User.php",
 			"settings":
 			{
-				"buffer_size": 1403,
+				"buffer_size": 1500,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
+			"file": "Category.php",
 			"settings":
 			{
-				"buffer_size": 521,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Seller.php",
-			"settings":
-			{
-				"buffer_size": 193,
+				"buffer_size": 370,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -716,7 +586,7 @@
 			"file": "Product.php",
 			"settings":
 			{
-				"buffer_size": 726,
+				"buffer_size": 828,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -725,7 +595,7 @@
 			"file": "Transaction.php",
 			"settings":
 			{
-				"buffer_size": 379,
+				"buffer_size": 485,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -734,7 +604,149 @@
 			"file": "Buyer.php",
 			"settings":
 			{
-				"buffer_size": 204,
+				"buffer_size": 329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Exceptions/Handler.php",
+			"settings":
+			{
+				"buffer_size": 3444,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php",
+			"settings":
+			{
+				"buffer_size": 831,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Category/CategoryController.php",
+			"settings":
+			{
+				"buffer_size": 3052,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Product/ProductController.php",
+			"settings":
+			{
+				"buffer_size": 1801,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Traits/ApiResponser.php",
+			"settings":
+			{
+				"buffer_size": 606,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Seller.php",
+			"settings":
+			{
+				"buffer_size": 320,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Transaction/TransactionController.php",
+			"settings":
+			{
+				"buffer_size": 1910,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+			"settings":
+			{
+				"buffer_size": 1631,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerCategoryController.php",
+			"settings":
+			{
+				"buffer_size": 1869,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerSellerController.php",
+			"settings":
+			{
+				"buffer_size": 1813,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Transaction/TransactionSellerController.php",
+			"settings":
+			{
+				"buffer_size": 1875,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerTransactionController.php",
+			"settings":
+			{
+				"buffer_size": 1757,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerController.php",
+			"settings":
+			{
+				"buffer_size": 1782,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Buyer/BuyerProductController.php",
+			"settings":
+			{
+				"buffer_size": 1788,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Transaction/TransactionCategoryController.php",
+			"settings":
+			{
+				"buffer_size": 1878,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Seller/SellerController.php",
+			"settings":
+			{
+				"buffer_size": 1835,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -779,7 +791,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 320.0
+		"width": 821.0
 	},
 	"console":
 	{
@@ -805,48 +817,61 @@
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Console",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Auth",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Transaction",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Middleware",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/bootstrap",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/config",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/tests",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Exception",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/routing"
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage"
 	],
 	"file_history":
 	[
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Auth/AuthenticationException.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Collection.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Http/Concerns/InteractsWithInput.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Buyer.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Category.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Transaction/TransactionController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User/UserController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions/Handler.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Controller.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/ApiController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Scopes/BuyerScope.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategoryController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/User.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Seller.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Product.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Transaction.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer/BuyerController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers/AppServiceProvider.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Tests/HttpCache/HttpCacheTestCase.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits/ApiResponser.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/FactoryBuilder.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factory.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/mockery/mockery/library/Mockery/Generator/Generator.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/User.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Product.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Transaction.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/Homestead.yaml",
 		"/C/Users/Ivan Rojo/Desktop/hosts",
 		"/C/Windows/System32/drivers/etc/hosts",
@@ -933,33 +958,7 @@
 		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/typings.json",
 		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/package-lock.json",
 		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/app/app.component.ts",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/tsconfig.json",
-		"/C/xampp/htdocs/CursoPHP/ejercicio29verusuarios.php",
-		"/C/xampp/htdocs/CursoPHP/login.php",
-		"/C/xampp/htdocs/CursoPHP/editar.php",
-		"/C/xampp/htdocs/CursoPHP/conect.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio24.php",
-		"/C/xampp/htdocs/CursoPHP/index.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio1.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio2.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio3.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio4.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio5.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio6.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio7.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio17.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio18.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio19.php",
-		"/C/xampp/htdocs/CursoPHP/header.php",
-		"/C/xampp/htdocs/CursoPHP/body.php",
-		"/C/xampp/htdocs/CursoPHP/footer.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio8.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio9.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio10.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio11.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio12.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio13.php",
-		"/C/xampp/htdocs/CursoPHP/ejercicio14.php"
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/curso-angular2/tsconfig.json"
 	],
 	"find":
 	{
@@ -980,6 +979,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"product",
+			"if",
+			"buyers",
+			"compradores",
 			"user",
 			"User",
 			"user",
@@ -1103,11 +1106,7 @@
 			">\n",
 			"slide",
 			"float",
-			"OFERTAS",
-			"ENTREGABLES",
-			"projectImagesD",
-			"logo-header",
-			"\n\t\t<a href=\"http://localhost:8000\"><img src=\"http://45.33.24.98/CDN/deq/logo-header.svg\"></a>"
+			"OFERTAS"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1126,24 +1125,24 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 18,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+					"file": "Scopes/SellerScope.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1063,
+						"buffer_size": 304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								304,
+								304
 							]
 						],
 						"settings":
@@ -1153,210 +1152,181 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Category.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 271,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Providers/AppServiceProvider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								249,
-								249
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 39.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 995,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								586,
-								586
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								918,
-								918
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 260.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 686,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								80
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 158.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 881,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								822,
-								822
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 256.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 21,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
+					"buffer": 1,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2014_10_12_000000_create_users_table.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2127,
+						"buffer_size": 1004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2100,
-								2100
+								848,
+								848
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 565.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								853,
+								853
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 704.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								772,
+								772
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 617.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								721,
+								721
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "User.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 628.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
 							]
 						],
 						"settings":
@@ -1365,452 +1335,27 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 477.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1047,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								502,
-								502
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Http/Controllers/Seller/SellerController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1778,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1110,
-								1110
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1035.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Http/Controllers/Transaction/TransactionController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1569,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								161,
-								161
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 674.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Http/Controllers/User/UserController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4283,
-								4283
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4973.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "Exceptions/Handler.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2813,
-								2813
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3151.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Http/Controllers/Controller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								398,
-								398
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4613,
-								4171
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 285.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "Http/Controllers/ApiController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 161,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								68,
-								71
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Http/Controllers/Buyer/BuyerController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1774,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1107,
-								1107
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 615.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "Http/Controllers/Category/CategoryController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1563,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1284.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "Http/Controllers/Product/ProductController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1561,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								125,
-								125
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1142.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "User.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								158,
-								158
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 303.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 20,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 521,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "Seller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 193,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
+					"buffer": 7,
 					"file": "Product.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 726,
+						"buffer_size": 828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								125,
-								125
+								671,
+								671
 							]
 						],
 						"settings":
@@ -1821,68 +1366,558 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 23,
+					"buffer": 8,
 					"file": "Transaction.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 379,
+						"buffer_size": 485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								102,
-								102
+								148,
+								148
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Buyer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 24,
-					"file": "Buyer.php",
+					"buffer": 10,
+					"file": "Exceptions/Handler.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 204,
+						"buffer_size": 3444,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								91,
-								91
+								76,
+								76
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								381,
+								381
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Http/Controllers/Category/CategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2062,
+								2062
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Http/Controllers/Product/ProductController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1801,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1055,
+								1055
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 608.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Http/Controllers/Traits/ApiResponser.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Seller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Http/Controllers/Transaction/TransactionController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								879,
+								879
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 574.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								975,
+								975
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 298.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "Http/Controllers/Buyer/BuyerCategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								475,
+								475
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "Http/Controllers/Buyer/BuyerSellerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "Http/Controllers/Transaction/TransactionSellerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								789
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "Http/Controllers/Buyer/BuyerTransactionController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								60,
+								60
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "Http/Controllers/Buyer/BuyerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								351,
+								384
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "Http/Controllers/Buyer/BuyerProductController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "Http/Controllers/Transaction/TransactionCategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								452
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "Http/Controllers/Seller/SellerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1169,
+								1169
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
 					"type": "text"
 				}
 			]
@@ -1985,7 +2020,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 313.0,
+	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
