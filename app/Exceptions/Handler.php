@@ -3,8 +3,8 @@
 namespace App\Exceptions;
 
 use Exception;
-use Illuminate\Database\QueryException;
 use App\Traits\ApiResponser as ApiResponser;
+use Illuminate\Database\QueryException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -15,19 +15,19 @@ use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 class Handler extends ExceptionHandler
 {
     use ApiResponser;
-    /**
-     * A list of the exception types that should not be reported.
-     *
-     * @var array
-     */
-    protected $dontReport = [
-        \Illuminate\Auth\AuthenticationException::class,
-        \Illuminate\Auth\Access\AuthorizationException::class,
-        \Symfony\Component\HttpKernel\Exception\HttpException::class,
-        \Illuminate\Database\Eloquent\ModelNotFoundException::class,
-        \Illuminate\Session\TokenMismatchException::class,
-        \Illuminate\Validation\ValidationException::class,
-    ];
+    // /**
+    //  * A list of the exception types that should not be reported.
+    //  *
+    //  * @var array
+    //  */
+    // protected $dontReport = [
+    //     \Illuminate\Auth\AuthenticationException::class,
+    //     \Illuminate\Auth\Access\AuthorizationException::class,
+    //     \Symfony\Component\HttpKernel\Exception\HttpException::class,
+    //     \Illuminate\Database\Eloquent\ModelNotFoundException::class,
+    //     \Illuminate\Session\TokenMismatchException::class,
+    //     \Illuminate\Validation\ValidationException::class,
+    // ];
 
     /**
      * Report or log an exception.
