@@ -46,8 +46,6 @@ class SellerProductController extends Controller
             'quantity' => 'required|integer|min:1',
             'image' => 'required|image'
         ];
-        //$this->validate($request,$rules);
-        // $data = $request->all();
         $data['name'] = $request->input('name');
         $data['description'] = $request->input('description');
         $data['quantity'] = (int)$request->input('quantity');
