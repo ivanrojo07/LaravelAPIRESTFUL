@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"product",
-				"producto"
+				"prod",
+				"product"
+			],
+			[
+				"DB",
+				"DB::transaction\tExecute a Closure within a transaction."
+			],
+			[
+				"error",
+				"errorResponse〔function〕"
 			],
 			[
 				"Pr",
-				"Product"
+				"Product\\ProductBuyerController"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"buye",
+				"buyers"
+			],
+			[
+				"buy",
+				"$buyers〔variable〕"
+			],
+			[
+				"product",
+				"producto"
 			],
 			[
 				"err",
@@ -26,10 +50,6 @@
 			[
 				"p",
 				"product"
-			],
-			[
-				"error",
-				"$errorInfo〔variable〕"
 			],
 			[
 				"pro",
@@ -494,26 +514,6 @@
 			[
 				"Acces-C",
 				"Access-Control-Allow-Headers"
-			],
-			[
-				"find",
-				"findById"
-			],
-			[
-				"favo",
-				"favorito"
-			],
-			[
-				"favori",
-				"favorito"
-			],
-			[
-				"fav",
-				"favorito"
-			],
-			[
-				"fa",
-				"FavoritoSchema"
 			]
 		]
 	},
@@ -541,16 +541,64 @@
 			"file": "Http/Controllers/Seller/SellerProductController.php",
 			"settings":
 			{
-				"buffer_size": 4582,
+				"buffer_size": 4502,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/log.txt",
+			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
 			"settings":
 			{
-				"buffer_size": 936,
+				"buffer_size": 2831,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace App\\Http\\Controllers\\Product;\n\nuse App\\Product;\nuse App\\User;\nuse App\\Transaction;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Database\\Eloquent\\Relations\\Relation;\nuse Illuminate\\Support\\ServiceProvider;\nuse Illuminate\\Support\\Facades\\DB;\nuse App\\Http\\Controllers\\Controller;\n\nclass ProductBuyerTransactionController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function index()\n    {\n        //\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function store(Request $request, Product $product, User $buyer)\n    {\n        // $data['quantity'] = (int)$request->input('quantity');\n        $rules =['quantity'=>'required|integer|min:1'];\n        $this->validate($request, $rules);\n\n        if ($buyer->id == $product->seller_id) {\n            return $this->errorResponse('El comprador debe ser diferente al vendedor', 409);\n        }\n        if(!$buyer->esVerificado){\n            return $this->errorResponse('El comprador debe ser un usuario verificado', 409);\n        }\n        if(!$product->seller->esVerificado()){\n            return $this->errorResponse('El vendedor debe ser un usuario verificado', 409);\n        }\n        if(!$product->estaDisponible()){\n            return $this->errorResponse('El producto para esta transacción no esta disponible', 409);\n        }\n        if ($product->quantity < $request->quantity) {\n            return $this->errorResponse('El producto no tiene la cantidad disponible requerida para esta transacción', 409);\n        }\n        return DB::transaction(function () use ($request, $product, $buyer) {\n            $product->quantity -= $request->quantity;\n            $product->save();\n            $transaction = Transaction::create([\n                'quantity' => $request->quantity,\n                'buyer_id'=> $buyer->id,\n                'product_id'=>$product->id\n                ]);\n            var_dump($transaction);\n            return $this->showOne($transaction);\n        });\n    }\n\n    /**\n     * Display the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function show(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function edit(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function update(Request $request, Product $product)\n    {\n        //\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function destroy(Product $product)\n    {\n        //\n    }\n}\n",
+			"file": "Http/Controllers/Product/ProductBuyerTransactionController.php",
+			"file_size": 3316,
+			"file_write_time": 131462009079592993,
+			"settings":
+			{
+				"buffer_size": 3288,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Product/ProductTransactionController.php",
+			"settings":
+			{
+				"buffer_size": 1826,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Seller/SellerController.php",
+			"settings":
+			{
+				"buffer_size": 1835,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Product/ProductCategoryController.php",
+			"settings":
+			{
+				"buffer_size": 2352,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Http/Controllers/Product/ProductBuyerController.php",
+			"settings":
+			{
+				"buffer_size": 1866,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -572,20 +620,28 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "in",
+		"last_filter": "package",
 		"selected_items":
 		[
 			[
-				"in",
+				"package",
 				"Package Control: Install Package"
+			],
+			[
+				"uninstall",
+				"Nodejs::NPM::Uninstall"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"PHPCompanion:Insert Constructor Property"
 			],
 			[
 				"remov",
 				"Package Control: Remove Package"
-			],
-			[
-				"uninstall",
-				"Snippet: Angular Material - Use the md-tab a nested directive used within md-tabs to specify a tab with a label and optional view content."
 			],
 			[
 				"ins",
@@ -597,10 +653,6 @@
 			],
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			]
 		],
@@ -628,17 +680,27 @@
 	[
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Transaction",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds"
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes"
 	],
 	"file_history":
 	[
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/phpunit.xml",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Seeder.php",
+		"/C/xampp/php/PEAR/adodb/tests/testsessions.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/log.txt",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
@@ -688,7 +750,6 @@
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User/UserController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Controller.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
@@ -761,12 +822,7 @@
 		"/C/Users/Ivan Rojo/Desktop/marcador/package.json",
 		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/package.json",
 		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/index.js",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favorito-delete.component.ts",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favorito-add.html",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favoritos-list.component.ts",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/assets/css/style.css",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/index.html",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/views/favorito-detail.html"
+		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favorito-delete.component.ts"
 	],
 	"find":
 	{
@@ -787,6 +843,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DB",
+			"use DB",
+			"']]);",
+			"category",
 			",);",
 			"Symfony\\Component\\HttpFoundation\\Response",
 			"headers",
@@ -910,11 +970,7 @@
 			"()\n",
 			"require",
 			"var",
-			"');\n",
-			"  \n",
-			"signupForm",
-			"signinForm",
-			"');"
+			"');\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -933,7 +989,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -961,10 +1017,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 264.0,
+						"translation.y": 290.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -995,7 +1051,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1004,15 +1060,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4582,
+						"buffer_size": 4502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4252,
-								4252
+								1177,
+								1230
 							]
 						],
 						"settings":
@@ -1023,19 +1079,111 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2113.0,
+						"translation.y": 183.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1901,
+								1901
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 127.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/log.txt",
+					"buffer": 4,
+					"file": "Http/Controllers/Product/ProductBuyerTransactionController.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 936,
+						"buffer_size": 3288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"spell_check": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Http/Controllers/Product/ProductTransactionController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Http/Controllers/Seller/SellerController.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1835,
 						"regions":
 						{
 						},
@@ -1048,17 +1196,81 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
+					"file": "Http/Controllers/Product/ProductCategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2333,
+								2333
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1092.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Http/Controllers/Product/ProductBuyerController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								912,
+								912
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 155.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "Http/Controllers/Traits/ApiResponser.php",
 					"semi_transient": false,
 					"settings":
@@ -1084,7 +1296,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1092,7 +1304,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -1151,6 +1363,18 @@
 		"selected_items":
 		[
 			[
+				"php",
+				"phpunit.xml"
+			],
+			[
+				"seeder",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Database\\Seeder.php"
+			],
+			[
+				"database",
+				"database\\seeds\\DatabaseSeeder.php"
+			],
+			[
 				"",
 				"install.php"
 			],
@@ -1186,7 +1410,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 329.0,
 	"status_bar_visible": true,
 	"template_settings":

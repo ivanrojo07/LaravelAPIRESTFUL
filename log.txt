@@ -1,3 +1,15 @@
+commit 17a78314ee1e9bfc5ada313856dd2bce419bf0a3
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Tue Aug 1 22:49:29 2017 -0500
+
+    Seller Controllers
+
+commit 2d457c82f7390862705901f7c2a7993d7bbe3d7c
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Tue Aug 1 22:47:54 2017 -0500
+
+    Seller Controllers
+
 commit 2ea6f20d0d8e042fdfdfa3c4d6683c4972569c1c
 Author: Ivan Rojo <ivanrojo07@gmail.com>
 Date:   Tue Aug 1 22:40:18 2017 -0500
