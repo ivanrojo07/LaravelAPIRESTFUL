@@ -7,6 +7,7 @@ use App\Seller;
 use App\Product as Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class SellerProductController extends Controller
 {
@@ -52,7 +53,8 @@ class SellerProductController extends Controller
         $data['description'] = $request->input('description');
         $data['quantity'] = (int)$request->input('quantity');
         $data['status'] = Product::PRODUCTO_NO_DISPONIBLE;
-        $data['image'] = '1.jpg';
+        // $data['image'] = '1.jpg';
+        $data['image'] = $request->image->store('');
         $data['seller_id'] = $seller->id;
         $product = new Product($data);
         $product->save();   
@@ -149,6 +151,7 @@ class SellerProductController extends Controller
         $product = $product->findOrfail($product->id);
         // var_dump($product);
         $this->verificarVendedor($product, $seller);
+        Storage::delete($product->image);
         $product->delete($product);
 
         return $this->showOne($product);
