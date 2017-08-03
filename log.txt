@@ -1,0 +1,47 @@
+commit 17a78314ee1e9bfc5ada313856dd2bce419bf0a3
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Tue Aug 1 22:49:29 2017 -0500
+
+    Seller Controllers
+
+commit 2d457c82f7390862705901f7c2a7993d7bbe3d7c
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Tue Aug 1 22:47:54 2017 -0500
+
+    Seller Controllers
+
+commit 2ea6f20d0d8e042fdfdfa3c4d6683c4972569c1c
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Tue Aug 1 22:40:18 2017 -0500
+
+    Seller Controllers
+
+commit fe558e6fa677229f84079322143d1514bad42a52
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Sun Jul 30 16:05:10 2017 -0500
+
+    Controladores Category
+
+commit 3ef94db7cdab7f1e61be4d64914fde55d1444f30
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Sat Jul 29 22:29:48 2017 -0500
+
+    Controlador Buyer
+
+commit 4cca72f8f41687237cdd05b66632bf8a6715dd16
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Wed Jul 26 19:05:00 2017 -0500
+
+    CategoryController
+
+commit 4964b290a6077d53fc5978384df92cd961ee4fae
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Wed Jul 26 17:14:29 2017 -0500
+
+    SoftDelete
+
+commit f71943c1e68887dfffbf5a25aeb7033e15049c29
+Author: Ivan Rojo <ivanrojo07@gmail.com>
+Date:   Wed Jul 26 14:52:05 2017 -0500
+
+    Inyeccion de Seller y Buyer con GlobalScope
