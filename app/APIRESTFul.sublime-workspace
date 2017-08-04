@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"Use",
+				"User\\UserController@verify"
+			],
+			[
+				"verific",
+				"verification_token"
+			],
+			[
+				"Usua",
+				"USUARIO_NO_VERIFICADO"
+			],
+			[
+				"Stor",
+				"Storage::get\tRetrieve the contents of a given file"
+			],
+			[
 				"prod",
 				"product"
 			],
@@ -498,22 +514,6 @@
 			[
 				"margin-",
 				"margin-left"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"favor",
-				"favortitosVisibles\tproperty"
-			],
-			[
-				"temp",
-				"templateUrl\tproperty"
-			],
-			[
-				"Acces-C",
-				"Access-Control-Allow-Headers"
 			]
 		]
 	},
@@ -526,143 +526,6 @@
 				"buffer_size": 1004,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Exceptions/Handler.php",
-			"settings":
-			{
-				"buffer_size": 3483,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Seller/SellerProductController.php",
-			"settings":
-			{
-				"buffer_size": 4582,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
-			"settings":
-			{
-				"buffer_size": 2409,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App\\Http\\Controllers\\Product;\n\n\nuse App\\User;\nuse App\\Product;\nuse App\\Transaction;\nuse Illuminate\\Http\\Request;\nuse Illuminate\\Support\\Facades\\DB;\nuse App\\Http\\Controllers\\Controller;\nuse Illuminate\\Support\\ServiceProvider;\nuse Illuminate\\Database\\Eloquent\\Relations\\Relation;\n\nclass ProductBuyerTransactionController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function index()\n    {\n        //\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function store(Request $request, Product $product, User $buyer)\n    {\n        // $data['quantity'] = (int)$request->input('quantity');\n        $rules =['quantity'=>'required|integer|min:1'];\n        // $this->validate($request, $rules);\n\n        // if ($buyer->id == $product->seller_id) {\n        //     return $this->errorResponse('El comprador debe ser diferente al vendedor', 409);\n        // }\n        // if(!$buyer->esVerificado){\n        //     return $this->errorResponse('El comprador debe ser un usuario verificado', 409);\n        // }\n        // if(!$product->seller->esVerificado()){\n        //     return $this->errorResponse('El vendedor debe ser un usuario verificado', 409);\n        // }\n        // if(!$product->estaDisponible()){\n        //     return $this->errorResponse('El producto para esta transacción no esta disponible', 409);\n        // }\n        // if ($product->quantity < $request->quantity) {\n        //     return $this->errorResponse('El producto no tiene la cantidad disponible requerida para esta transacción', 409);\n        // }\n        \n        return DB::transaction(function () use ($request, $product, $buyer) {\n            $product->quantity -= $request->input('quantity');\n            $product->save();\n            $transaction = Transaction::create([\n                'quantity' => $request->quantity,\n                'buyer_id'=> $buyer->id,\n                'product_id'=>$product->id,\n                ]);\n            return $this->showOne($transaction);\n        });\n    }\n\n    /**\n     * Display the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function show(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function edit(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function update(Request $request, Product $product)\n    {\n        //\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function destroy(Product $product)\n    {\n        //\n    }\n}\n",
-			"file": "Http/Controllers/Product/ProductBuyerTransactionController.php",
-			"file_size": 3322,
-			"file_write_time": 131462027223659431,
-			"settings":
-			{
-				"buffer_size": 3320,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Providers/AppServiceProvider.php",
-			"settings":
-			{
-				"buffer_size": 484,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "User.php",
-			"settings":
-			{
-				"buffer_size": 1500,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Transaction.php",
-			"settings":
-			{
-				"buffer_size": 485,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Seller.php",
-			"settings":
-			{
-				"buffer_size": 320,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Product.php",
-			"settings":
-			{
-				"buffer_size": 863,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Buyer.php",
-			"settings":
-			{
-				"buffer_size": 329,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App\\Http\\Controllers\\Product;\n\nuse App\\Product;\nuse Illuminate\\Http\\Request;\nuse App\\Http\\Controllers\\Controller;\n\nclass ProductTransactionController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function index(Product $product)\n    {\n        $transactions = $product->transactions;\n        return $this->showAll($transactions);\n        // var_dump($transactions);\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function store(Request $request)\n    {\n        //\n    }\n\n    /**\n     * Display the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function show(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function edit(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function update(Request $request, Product $product)\n    {\n        //\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function destroy(Product $product)\n    {\n        //\n    }\n}\n",
-			"file": "Http/Controllers/Product/ProductTransactionController.php",
-			"file_size": 1826,
-			"file_write_time": 131461847088498599,
-			"settings":
-			{
-				"buffer_size": 1826,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App\\Http\\Controllers\\Product;\n\nuse App\\Product;\nuse App\\Category;\nuse Illuminate\\Http\\Request;\nuse App\\Http\\Controllers\\Controller;\n\nclass ProductCategoryController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function index(Product $product)\n    {\n        $categories = $product->categories;\n        return $this->showAll($categories);\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function store(Request $request)\n    {\n        //\n    }\n\n    /**\n     * Display the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function show(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function edit(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function update(Request $request, Product $product, Category $category)\n    {\n        // $product->categories()->sync([$category->id]);\n        // $product->categories()->attach([$category->id]);\n        $product->categories()->syncWithoutDetaching([$category->id]);\n        return $this->index($product);\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function destroy(Product $product, Category $category)\n    {\n        if(!$product->categories()->find($category->id)){\n            return $this->errorResponse('La categoria seleccionada no es una categoria de este producto',404);\n        }\n        else{\n            $product->categories()->detach([$category->id]);\n            return $this->index($product);\n        }\n    }\n}\n",
-			"file": "Http/Controllers/Product/ProductCategoryController.php",
-			"file_size": 2352,
-			"file_write_time": 131461885352923506,
-			"settings":
-			{
-				"buffer_size": 2352,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n\nnamespace App\\Http\\Controllers\\Product;\n\nuse App\\Product;\nuse Illuminate\\Http\\Request;\nuse App\\Http\\Controllers\\Controller;\n\nclass ProductBuyerController extends Controller\n{\n    /**\n     * Display a listing of the resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function index(Product $product)\n    {\n        $buyers = $product->transactions()->with('buyer')->get()->pluck('buyer')->unique()->values('id');\n        return $this->showAll($buyers);\n        // var_dump($buyers);\n    }\n\n    /**\n     * Show the form for creating a new resource.\n     *\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function create()\n    {\n        //\n    }\n\n    /**\n     * Store a newly created resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function store(Request $request)\n    {\n        //\n    }\n\n    /**\n     * Display the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function show(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Show the form for editing the specified resource.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function edit(Product $product)\n    {\n        //\n    }\n\n    /**\n     * Update the specified resource in storage.\n     *\n     * @param  \\Illuminate\\Http\\Request  $request\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function update(Request $request, Product $product)\n    {\n        //\n    }\n\n    /**\n     * Remove the specified resource from storage.\n     *\n     * @param  \\App\\Product  $product\n     * @return \\Illuminate\\Http\\Response\n     */\n    public function destroy(Product $product)\n    {\n        //\n    }\n}\n",
-			"file": "Http/Controllers/Product/ProductBuyerController.php",
-			"file_size": 1866,
-			"file_write_time": 131461891332690180,
-			"settings":
-			{
-				"buffer_size": 1866,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Http/Controllers/Traits/ApiResponser.php",
-			"settings":
-			{
-				"buffer_size": 601,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -736,46 +599,75 @@
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Mail",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/config",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes"
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/resources",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/resources/views",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/resources/views/emails",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage/app/public",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage/app/public/img",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage/framework",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage/logs"
 	],
 	"file_history":
 	[
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions/Handler.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerProductController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/.env",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User/UserController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductBuyerTransactionController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers/AppServiceProvider.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/config/filesystems.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/User.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Mail/UserCreated.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/storage/logs/laravel.log",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Mail/UserMailChanged.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/resources/views/emails/confirm.blade.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/resources/views/emails/welcome.blade.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Transaction.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Seller.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Product.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Buyer.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductTransactionController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductCategoryController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductBuyerController.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits/ApiResponser.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/C/Users/Ivan Rojo/Desktop/APIRestFul/public/img/.gitignore",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/phpunit.xml",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/Relation.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/seeds/DatabaseSeeder.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Seeder.php",
 		"/C/xampp/php/PEAR/adodb/tests/testsessions.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/log.txt",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_022855_create_products_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023103_create_transactions_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_20_023221_create_categories_table.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/User.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Category.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Product.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerTransactionController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerCategoryController.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Transaction.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategoryBuyerController.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Buyer.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Exceptions/Handler.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Exception/NotFoundHttpException.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategoryController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Product/ProductController.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Traits/ApiResponser.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Seller.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Transaction/TransactionController.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategorySellerController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategoryTransactionController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer/BuyerCategoryController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Category/CategoryProductController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Buyer/BuyerSellerController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerBuyerController.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Seller/SellerProductController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/composer.json",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/config/app.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/bootstrap/app.php",
@@ -798,13 +690,10 @@
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Support/Collection.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/migrations/2017_07_21_224941_category_product_table.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/database/factories/ModelFactory.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/User/UserController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/Controller.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Http/Controllers/ApiController.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Scopes/BuyerScope.php",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/.env.example",
-		"/C/Users/Ivan Rojo/Desktop/APIRestFul/app/Providers/AppServiceProvider.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/symfony/http-kernel/Tests/HttpCache/HttpCacheTestCase.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php",
 		"/C/Users/Ivan Rojo/Desktop/APIRestFul/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php",
@@ -857,30 +746,18 @@
 		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/pipes/conversor.pipe.ts",
 		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/contacto/contacto.component.ts",
 		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/contacto/contacto.component.html",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.component.html",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.component.ts",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/index.html",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/fruta/fruta.component.ts",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/fruta/fruta.component.html",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.ts",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/src/main.ts",
-		"/C/Users/Ivan Rojo/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-js-completions.sublime-settings",
-		"/C/Users/Ivan Rojo/Desktop/Angular4/proyectoAngular4.sublime-project",
-		"/C/Users/Ivan Rojo/Desktop/marcador/angular-cli.json",
-		"/C/Users/Ivan Rojo/Desktop/marcador/package.json",
-		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/package.json",
-		"/C/Users/Ivan Rojo/Desktop/node-js-getting-started/index.js",
-		"/C/Users/Ivan Rojo/Desktop/Curso node-angular/angular2-final/app/components/favorito-delete.component.ts"
+		"/C/Users/Ivan Rojo/Desktop/Angular4/src/app/persona/persona.component.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
 		"height": 90.0,
 		"where_history":
 		[
+			"C:\\Users\\Ivan Rojo\\Desktop\\APIRestFul",
 			"",
 			"C:\\xampp\\htdocs\\deq_web\\resources\\views",
 			""
@@ -891,6 +768,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"});\n",
+			"XwIVgbB1QZ4FrZEHRsUsCekT81bkMFckgnQ0Uwk6.jpg",
+			"XwIVgbB1QZ4FrZEHRsUsCekT81bkMFckgnQ0Uwk6",
+			"Searching",
+			"XwIVgbB1QZ4FrZEHRsUsCekT81bkMFckgnQ0Uwk6",
 			");\n",
 			"DB",
 			"use DB",
@@ -1013,12 +895,7 @@
 			"place.name",
 			"}));",
 			"Storage::disk",
-			"route('logout')",
-			"<",
-			"ext",
-			"()\n",
-			"require",
-			"var"
+			"route('logout')"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1037,7 +914,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1065,437 +942,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 290.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Exceptions/Handler.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Http/Controllers/Seller/SellerProductController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4582,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1177,
-								1230
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 183.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Ivan Rojo/Desktop/APIRestFul/routes/api.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1901,
-								1901
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 127.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Http/Controllers/Product/ProductBuyerTransactionController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3320,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1106,
-								1921
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"spell_check": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 648.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Providers/AppServiceProvider.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 484,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								484,
-								484
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 44.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "User.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1500,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1266,
-								1266
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 539.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Transaction.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								379,
-								379
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Seller.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 320,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Product.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 863,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								666,
-								666
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Buyer.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 329,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Http/Controllers/Product/ProductTransactionController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1826,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								390,
-								390
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Http/Controllers/Product/ProductCategoryController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2352,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2333,
-								2333
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1092.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Http/Controllers/Product/ProductBuyerController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								912,
-								912
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 155.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Http/Controllers/Traits/ApiResponser.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								601,
-								601
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
 					"type": "text"
 				}
 			]
@@ -1609,8 +1059,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 329.0,
+	"side_bar_visible": true,
+	"side_bar_width": 327.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

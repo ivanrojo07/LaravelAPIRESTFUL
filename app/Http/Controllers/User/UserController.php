@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\User;
 
 use App\User;
+use App\Mail\UserCreated;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ApiController;
 
 class UserController extends Controller
@@ -49,6 +51,7 @@ class UserController extends Controller
         $campos['password']= bcrypt($request->password);
         $campos['verified']=User::USUARIO_NO_VERIFICADO;
         $campos['admin'] =User::USUARIO_REGULAR;
+        $campos['verification_token'] = User::generarVerificationToken();
         $usuario = User::create($campos);
         if ($usuario){
             return response()->json(['data'=>$usuario], 201);
@@ -126,7 +129,7 @@ class UserController extends Controller
                 $usuario->admin = $request->admin;
             }
         }
-        // dd($usuario);
+        // var_dump($usuario);
         if (!$usuario->isDirty()) {
             return $this->errorResponse('Error. Se debe de especificar al menos un valor diferente para actualizar', 422);
           // return response()->json(['message'=>'Error. Se debe de especificar al menos un valor diferente para actualizar', 'code'=>422], 422);
@@ -149,5 +152,25 @@ class UserController extends Controller
         $usuario->delete($usuario);
 
         return $this->showOne($usuario);
+    }
+    public function verify($token){
+        $user = User::where('verification_token', $token)->firstOrFail();
+        $user->verified = User::USUARIO_VERIFICADO;
+        $user->verification_token = null;
+        $user->save();
+        // return $this->successResponse('La cuenta ha sido verificada',200);
+        return response()->json(['message'=>'La cuenta ha sido verificada'], 200);
+    }
+    public function resend(User $user){
+        if ($user->esVerificado()) {
+            return $this->errorResponse('Este usuario ya ha sido verificado', 409);
+        }
+        else{
+            retry(5, function() use ($user){
+                Mail::to($user)->send(new UserCreated($user));
+            },100);
+            return response()->json(['message'=>'El correo de verificación se ha reenviado'],200);
+        }
+
     }
 }

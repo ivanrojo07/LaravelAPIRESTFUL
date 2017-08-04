@@ -37,3 +37,5 @@ Route::resource('sellers.categories', 'Seller\SellerCategoryController', ['only'
 Route::resource('sellers.buyers', 'Seller\SellerBuyerController', ['only'=>'index']);
 Route::resource('sellers.products', 'Seller\SellerProductController', ['except'=>['create', 'show', 'edit']]);
 Route::resource('users', 'User\UserController', ['except'=>['create', 'edit']]);
+Route::name('verify')->get('users/verify/{token}', 'User\UserController@verify');
+Route::name('resend')->get('users/{user}/resend', 'User\UserController@resend');
