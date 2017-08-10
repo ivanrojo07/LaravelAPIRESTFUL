@@ -10,9 +10,24 @@ trait ApiResponser {
 		return response()->json(['error'=>$message, 'code'=>$code], $code);
 	}
 	protected function showAll(Collection $collection, $code = 200){
-		return $this->successResponse(['data'=>$collection], $code);
+		if ($collection->isEmpty()) {
+			return $this->successResponse(['data'=>$collection],$code);
+		}
+		else{
+			$transformer = $collection->first()->transformer;
+			$collection = $this->transformData($collection, $transformer);
+			return $this->successResponse($collection, $code);
+		}
+		
 	}
 	protected function showOne(Model $instance, $code = 200){
-		return $this->successResponse(['data'=>$instance], $code);
+		$transformer = $instance->transformer;
+		$instance = $this->transformData($instance, $transformer);
+		return $this->successResponse($instance, $code);
+	}
+
+	protected function transformData($data, $transformer){
+		$transformation = fractal($data, new $transformer);
+		return $transformation->toArray();
 	}
 }

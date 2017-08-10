@@ -7,10 +7,12 @@ use App\Category;
 use App\Transaction;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Transformers\ProductTransformer;
 
 class Product extends Model
 {
   use SoftDeletes;
+  public $transformer = ProductTransformer::class;
 	const PRODUCTO_DISPONIBLE = 'disponible';
 	const PRODUCTO_NO_DISPONIBLE = 'no disponible';
     protected $dates=['deleted_at'];
