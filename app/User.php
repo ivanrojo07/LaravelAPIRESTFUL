@@ -8,10 +8,12 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Transformers\UserTransformer;
 
 
+
 class User extends Authenticatable
 {
     use Notifiable, SoftDeletes;
 
+    public $transformer = UserTransformer::class;
     const USUARIO_VERIFICADO = '1';
     const USUARIO_NO_VERIFICADO= '0';
 
@@ -20,7 +22,6 @@ class User extends Authenticatable
 
     protected $table = 'users';
     protected $dates =['deleted_at'];
-    public $transformer = UserTransformer::class;
 
     /**
      * The attributes that are mass assignable.

@@ -20,7 +20,8 @@ class UserController extends Controller
     {
         $usuarios = User::all();
         // return $usuario;
-        return response()->json([ 'data'=>$usuarios], 200);
+        // return response()->json([ 'data'=>$usuarios], 200);
+        return $this->showAll($usuarios);
     }
 
     /**
@@ -71,7 +72,8 @@ class UserController extends Controller
     {
         $usuario = User::find($id);
         if ($usuario) {
-            return response()->json(['data'=>$usuario],200);
+            // return response()->json(['data'=>$usuario],200);
+            return $this->showOne($usuario);
         }
         else{
             return response()->json(['messenger'=>'El usuario no existe'], 404);
